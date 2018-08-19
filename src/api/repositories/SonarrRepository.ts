@@ -1,5 +1,4 @@
 import { injectable, inject } from "inversify";
-import { plainToClass } from "class-transformer";
 import requestify = require("requestify");
 
 import { SettingsDBRepository } from "./index";

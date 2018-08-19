@@ -1,6 +1,4 @@
 import { injectable, inject } from "inversify";
-import { plainToClass } from "class-transformer";
-import requestify = require("requestify");
 import JsonDB = require('node-json-db');
 import uuidV1 = require('uuid/v1');
 

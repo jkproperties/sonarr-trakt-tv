@@ -1,8 +1,8 @@
 import { injectable, inject } from "inversify";
-import { plainToClass } from "class-transformer";
 import requestify = require("requestify");
 import JsonDB = require('node-json-db');
 import uuidV1 = require('uuid/v1');
+import { config } from './Config';
 
 
 @injectable()
@@ -10,7 +10,7 @@ export class DBRepository {
     private db: any;
 
     constructor() {
-        this.db = new JsonDB("db", true, false);
+        this.db = new JsonDB(config.databaseLocation, true, false);
     }
 
     create(item) {

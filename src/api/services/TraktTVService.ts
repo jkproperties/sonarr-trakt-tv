@@ -1,6 +1,5 @@
 
 import { injectable, inject } from 'inversify';
-import { plainToClass } from "class-transformer";
 
 import { TraktTVRepository } from '../repositories';
 
